@@ -45,10 +45,10 @@ main{
     text-decoration: none;
     color: inherit;
 }
-.padd-20{
-    padding: 0 1.25rem ;
+/* sezioni */
+section{
+    padding: 1.25rem 0;
 }
-/* sezione RECENTLY PLAYED  */
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -56,26 +56,36 @@ main{
     margin-right: -0.25rem;
 }
 .col{
-    width: 50%;   
-    margin-bottom: .3125rem;
+    width: 50%; 
 }
 .album{
     padding: 0 .25rem;
     text-align: center;
 }
 .album-img{
-    height: 220px;
-    background-color: darkred;
     margin-bottom: 1.25rem;
 }
-#recently-played h2{
-    margin: 1.25rem 0 1.875rem;
+.album-img img{
+    width: 100%;
+}
+.section-title{
+    margin-bottom: 1.875rem;
 }
 .album h4{
     margin-bottom: .625rem;
 }
 .album h5{
     color: grey;
+    margin-bottom: .3125rem;
+}
+/* sezione CREATO PER  */
+.section-title h3{
+    margin-top: .9375rem;
+    color:grey;
+}
+/* sezione ARTISTI PIù ASCOLTATI */
+.circle-img{
+    border-radius: 50%;
 }
 /* RESPONSIVE */
 @media screen and (min-width:700px) {

@@ -1,3 +1,11 @@
+/* COMMON */
 .hide-xs{
     display: none;
+}
+.padd-20{
+    padding: 0 1.25rem ;
+}
+/* TYPOGRAPHY */
+body{
+    font-weight: bold;
 }
