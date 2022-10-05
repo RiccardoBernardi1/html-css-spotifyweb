@@ -1,0 +1,6 @@
+aside{
+    width: 3.125rem;
+    background-color: blueviolet;
+    height: 100%;
+    flex-shrink: 0;
+}

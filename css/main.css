@@ -1,0 +1,21 @@
+.container-main-aside{
+    display: flex;
+    height:calc(100% - 5.625rem);
+}
+main{
+    background-color: blue;
+    height: 100%;
+    overflow-y: auto;
+}
+.upgrade{
+    height: 5.625rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: right;
+    line-height: 5.625rem;
+    padding-right: 5px;
+}
