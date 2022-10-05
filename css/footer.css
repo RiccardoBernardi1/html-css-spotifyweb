@@ -1,4 +1,96 @@
+/* FOOTER */
 footer{
     height: 5.625rem;
-    background-color: grey;
+    background-color: #282828;
+    display: flex;
+    padding: 0 .3125rem ;
+    justify-content: space-between;
+    align-items: center;
+}
+/* prima colonna footer */
+/* primo elemento della colonna */
+.song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.song-heart{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    max-width: 13.75rem;
+}
+.footer-col ul{
+    list-style: none;
+    margin-left: .5rem;
+}
+.footer-col a{
+    text-decoration: none;
+    color: grey;
+    font-size: .75rem;
+}
+.footer-col .album-name{
+    color:white;
+    font-size: .875rem;
+}
+.footer-img{
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+}
+/* secondo elemento della colonna */
+.heart-folder{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1.5625rem;
+    align-items: center;
+    align-content: center;
+}
+.heart-folder div{
+    height: 1.5625rem;
+    width: 1.5625rem;
+    background-color: yellow;
+    border: 2px dashed red;
+}
+/* seconda colonna footer */
+.player{
+    background-color: blue;
+    border: 2px dashed red;
+    width: 50%;
+}
+.player-up,.player-down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.player-up div,.player-down div{
+    height: .9375rem;
+    width: .9375rem;
+    background-color: yellow;
+    border: 2px dashed black;
+}
+.player .play {
+    height: 2.1875rem;
+    width: 2.1875rem;
+}
+.player .time-bar{
+    width: 50%;
+    height: .625rem;
+}
+/* terza colonna footer */
+.volume ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.volume ul li{
+    height: .9375rem;
+    width: .9375rem;
+    background-color: yellow;
+    border: 2px dashed black;
+}
+.volume ul .volume-bar{
+    width: 65%;
+}
+.volume{
+    width: 30%;
 }
