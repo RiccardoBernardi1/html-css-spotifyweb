@@ -6,6 +6,7 @@ main{
     background-color: blue;
     height: 100%;
     overflow-y: auto;
+    flex-grow: 1;
 }
 .upgrade{
     height: 5.625rem;
@@ -17,5 +18,9 @@ main{
     z-index: 100;
     text-align: right;
     line-height: 5.625rem;
-    padding-right: 5px;
+    padding-right: .3125rem;
+}
+/* RESPONSIVE */
+@media screen and (min-width:700px) {
+    
 }

@@ -1,6 +1,59 @@
+/* ASIDE */
 aside{
     width: 3.125rem;
-    background-color: blueviolet;
+    background-color: black;
     height: 100%;
     flex-shrink: 0;
+    padding: .3125rem .9375rem ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    color:white;
+    font-weight:bold;
+}
+/* navigazioni laterali */
+aside nav{
+    width: 100%;
+}
+aside nav ul{
+    list-style: none;
+}
+aside nav ul li:not(.no-b-marg){
+    margin-bottom: 15px;
+}
+aside nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav.hide-xs{
+    margin-top: 1.5625rem;
+}
+nav.hide-xs li{
+    margin-bottom: 1.25rem;
+}
+/* crea playlist */
+.create{
+    display: flex; 
+    font-size: 1.25rem;  
+    align-items: center;
+    margin-top: .9375rem;
+}
+.create-square{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: grey;
+    margin-right: .625rem;
+}
+/* RESPONSIVE */
+@media screen and (min-width:700px) {
+    aside{
+        width: 14.375rem;
+        padding: 1.25rem 1.25rem .3125rem;
+    }
+    .hide-xs{
+        display: block;
+    }
+    .show-xs{
+        display: none;
+    }
 }
