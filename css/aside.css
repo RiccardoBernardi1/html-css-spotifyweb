@@ -45,7 +45,7 @@ nav.hide-xs li{
     margin-right: .625rem;
 }
 /* RESPONSIVE */
-@media screen and (min-width:700px) {
+@media screen and (min-width:600px) {
     aside{
         width: 14.375rem;
         padding: 1.25rem 1.25rem .3125rem;

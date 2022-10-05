@@ -8,6 +8,7 @@ main{
     height: 100%;
     overflow-y: auto;
     flex-grow: 1;
+    color: white;
 }
 /* sezione upgrade */
 .upgrade{
@@ -47,7 +48,43 @@ main{
 .padd-20{
     padding: 0 1.25rem ;
 }
+/* sezione RECENTLY PLAYED  */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+}
+.col{
+    width: 50%;   
+    margin-bottom: .3125rem;
+}
+.album{
+    padding: 0 .25rem;
+    text-align: center;
+}
+.album-img{
+    height: 220px;
+    background-color: darkred;
+    margin-bottom: 1.25rem;
+}
+#recently-played h2{
+    margin: 1.25rem 0 1.875rem;
+}
+.album h4{
+    margin-bottom: .625rem;
+}
+.album h5{
+    color: grey;
+}
 /* RESPONSIVE */
 @media screen and (min-width:700px) {
-    
+    .col{
+        width: 25%;
+    }
+}
+@media screen and (min-width:1100px) {
+    .col{
+        width: calc(100% / 6)
+    }
 }
