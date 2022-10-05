@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- /link font -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,28 +20,43 @@
                 <nav>
                     <ul>
                         <li class="show-xs">
-                            <a href="#">logo xs</a>
+                            <a href="#">
+                                <img class="nav-icon" src="img/logo-small.svg" alt="logo">
+                            </a>
                         </li>
                         <li class="hide-xs">
-                            <a href="#">logo</a>
+                            <a href="#"><img src="img/logo.svg" alt="logo"></a>
                         </li>
                         <li class="show-xs">
-                            <a href="#">home xs</a>
+                            <a href="#">
+                                <img class="nav-icon" src="img/home.svg" alt="icona home">
+                            </a>
                         </li>
                         <li class="hide-xs">
-                            <a href="#">home</a>
+                            <a href="#">
+                                <img class="nav-icon" src="img/home.svg" alt="icona home">
+                                <span class="vert-al">Home</span>
+                            </a>
                         </li>
                         <li class="show-xs">
-                            <a href="#">cerca xs</a>
+                            <a href="#">
+                                <img class="nav-icon" src="img/search.svg" alt="cerca">
+                            </a>
                         </li>
                         <li class="hide-xs">
-                            <a href="#">cerca</a>
+                            <a href="#">
+                                <img class="nav-icon" src="img/search.svg" alt="cerca">
+                                <span class="vert-al">Cerca</span>
+                            </a>
                         </li>
                         <li class="show-xs">
                             <a href="#">libr xs</a>
                         </li>     
                         <li class="hide-xs">
-                            <a href="#">libreria</a>
+                            <a href="#">
+                                <img class="nav-icon" src="img/libreria.svg" alt="libreria">
+                                <span class="vert-al">La tua libreria</span>
+                            </a>
                         </li>              
                     </ul>
                 </nav>
@@ -44,9 +64,11 @@
                 <!-- seconda navigazione laterale -->
                 <nav class="hide-xs">
                     <h3>PLAYLIST</h3>
-                    <ul>
+                    <ul class="playlist">
                         <li class="create">
-                            <div class="create-square"></div>
+                            <div class="create-square">
+                                <span>+</span>
+                            </div>
                             <a href="#">Crea Playlist</a>
                         </li>
                         <li>
@@ -75,19 +97,29 @@
                 <!-- /seconda navigazione laterale -->
             </div>  
             <!-- terza navigazione laterale -->          
-            <nav>
+            <nav class="last-nav">
                 <ul>
                     <li class="show-xs">
-                        <a href="#">down xs</a>
+                        <a href="#">
+                            <img class="nav-icon" src="img/download.svg" alt="download">
+                        </a>
                     </li>
                     <li class="hide-xs">
-                        <a href="#">Installa app</a>
+                        <a href="#">
+                            <img class="nav-icon" src="img/download.svg" alt="download">
+                            <span class="vert-al">Installa app</span>
+                        </a>
                     </li>
                     <li class="show-xs no-b-marg">
-                        <a href="#">user xs</a>
+                        <a href="#">
+                            <img class="nav-icon profile" src="img/profile.svg" alt="profilo">
+                        </a>
                     </li>
                     <li class="hide-xs no-b-marg">
-                        <a href="#">user</a>
+                        <a href="#">
+                            <img class="nav-icon profile" src="img/profile.svg" alt="profilo">
+                            <span class="vert-al">John Doe</span>
+                        </a>
                     </li>
                 </ul>   
             </nav>

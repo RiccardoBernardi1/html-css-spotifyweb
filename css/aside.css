@@ -8,18 +8,18 @@ aside{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    color:white;
+    color: #707070;
     font-weight:bold;
 }
 /* navigazioni laterali */
 aside nav{
-    width: 100%;
+    max-width: 100%;
 }
 aside nav ul{
     list-style: none;
 }
 aside nav ul li:not(.no-b-marg){
-    margin-bottom: 15px;
+    margin-bottom: .9375rem;
 }
 aside nav ul li a{
     text-decoration: none;
@@ -31,6 +31,27 @@ nav.hide-xs{
 nav.hide-xs li{
     margin-bottom: 1.25rem;
 }
+.nav-icon{
+    max-width: 1.5625rem;
+    filter: invert(0.3);
+    vertical-align: middle;
+}
+.nav-icon.profile{
+    width: 1.5625rem;
+    background-color: #808080;
+    border-radius: 50%;
+}
+.hide-xs.no-b-marg{
+    border-top: 2px solid #808080;
+    padding-top: .9375rem;
+    color: white;
+}
+.last-nav{
+    width: 100%;
+}
+.vert-al{
+    vertical-align: middle;
+}
 /* crea playlist */
 .create{
     display: flex; 
@@ -41,8 +62,12 @@ nav.hide-xs li{
 .create-square{
     width: 2.1875rem;
     height: 2.1875rem;
-    background-color: grey;
+    background-color: #a3a3a3;
     margin-right: .625rem;
+    font-size: 2.5rem;
+    color: black;
+    line-height: 2.1875rem;
+    text-align: center;
 }
 /* RESPONSIVE */
 @media screen and (min-width:600px) {
