@@ -1,13 +1,15 @@
+/* MAIN */
 .container-main-aside{
     display: flex;
     height:calc(100% - 5.625rem);
 }
 main{
-    background-color: blue;
+    background-color: #141922;
     height: 100%;
     overflow-y: auto;
     flex-grow: 1;
 }
+/* sezione upgrade */
 .upgrade{
     height: 5.625rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -19,6 +21,31 @@ main{
     text-align: right;
     line-height: 5.625rem;
     padding-right: .3125rem;
+}
+.upgrade-btn{
+    text-decoration: none;
+    color: white;
+    padding: .9375rem 2.5rem;
+    border: .125rem solid white;
+    border-radius: 1.875rem;
+}
+/* navigazione superiore */
+.main-nav ul{
+    color: grey;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+.main-nav ul li{
+    padding: 1.25rem .625rem;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.padd-20{
+    padding: 0 1.25rem ;
 }
 /* RESPONSIVE */
 @media screen and (min-width:700px) {
