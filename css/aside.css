@@ -6,10 +6,10 @@ aside{
     flex-shrink: 0;
     padding: .3125rem .9375rem ;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: column;
     color: #707070;
     font-weight:bold;
+    overflow-y: hidden;
 }
 /* navigazioni laterali */
 aside nav{
@@ -32,7 +32,7 @@ nav.hide-xs li{
     margin-bottom: 1.25rem;
 }
 .nav-icon{
-    max-width: 1.5625rem;
+    width: 1.5625rem;
     filter: invert(0.3);
     vertical-align: middle;
 }
@@ -48,16 +48,27 @@ nav.hide-xs li{
 }
 .last-nav{
     width: 100%;
+    margin-top: auto;
 }
 .vert-al{
     vertical-align: middle;
 }
+.download{
+    margin-left: -0.1875rem;
+}
 /* crea playlist */
-.create{
+nav h3{
+    color: white;
+}
+.playlist-header{
     display: flex; 
     font-size: 1.25rem;  
     align-items: center;
-    margin-top: .9375rem;
+    margin: .9375rem 0 1.25rem;
+}
+.playlist-header a{
+    text-decoration: none;
+    color: inherit;
 }
 .create-square{
     width: 2.1875rem;
@@ -68,6 +79,10 @@ nav.hide-xs li{
     color: black;
     line-height: 2.1875rem;
     text-align: center;
+}
+.playlist{
+    overflow-y: auto;
+    height: 15rem;
 }
 /* RESPONSIVE */
 @media screen and (min-width:600px) {
