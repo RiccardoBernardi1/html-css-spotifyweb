@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- link font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- link font -->
@@ -300,7 +301,7 @@
         <!-- prima colonna footer -->
         <div class="footer-col song-heart">
             <div class="song">
-                <img class="footer-img" src="img/150.png" alt="">
+                <img class="footer-img" src="img/sinister.jpeg" alt="">
                 <ul>
                     <li >
                         <a class="album-name" href="#">Sinister</a>
@@ -314,35 +315,39 @@
                 </ul>
             </div>
             <div class="heart-folder">
-                <div></div>
-                <div></div>
+                <button class="btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn"><i class="fa-regular fa-folder"></i></button>
             </div>
         </div>
         <!-- /prima colonna footer -->
         <!-- seconda colonna footer -->
         <div class="footer-col player">
             <div class="player-up">
-                <div></div>
-                <div></div>
-                <div class="play"></div>
-                <div></div>
-                <div></div>
+                <button class="btn"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="btn"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play btn"><i class="fa-regular fa-circle-play"></i></button>
+                <button class="btn"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="btn"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
             </div>
             <div class="player-down">
-                <div class="time">0:25</div>
-                <div class="time-bar"></div>
+                <div class="time">1:52</div>
+                <div class="time-bar bar">
+                    <div class="time-past left-bar"></div>
+                    <div class="time-left right-bar"></div>
+                </div>
                 <div class="time">4:35</div>
             </div>           
         </div>
         <!-- /seconda colonna footer -->
         <!-- terza colonna footer -->
         <div class="footer-col volume">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="volume-bar"></li>
-            </ul>
+           <button class="btn"><i class="fa-solid fa-bars"></i></button>
+           <button class="btn"><i class="fa-solid fa-desktop"></i></i></button>
+           <button class="btn"><i class="fa-solid fa-volume-high"></i></button>
+           <div class="volume-bar bar">
+                <div class="actual-volume left-bar"></div>
+                <div class="total-volume right-bar"></div>
+           </div>
         </div>
         <!-- /terza colonna footer -->
     </footer>
