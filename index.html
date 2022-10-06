@@ -26,17 +26,17 @@
                             </a>
                         </li>
                         <li class="hide-xs">
-                            <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                            <a href="#"><img class="logo-icon" src="img/logo.svg" alt="logo"></a>
                         </li>
                         <li class="show-xs">
                             <a href="#">
                                 <img class="nav-icon" src="img/home.svg" alt="icona home">
                             </a>
                         </li>
-                        <li class="hide-xs">
+                        <li class="hide-xs home">
                             <a href="#">
                                 <img class="nav-icon" src="img/home.svg" alt="icona home">
-                                <span class="vert-al">Home</span>
+                                <span class="vert-al hover-white">Home</span>
                             </a>
                         </li>
                         <li class="show-xs">
@@ -47,7 +47,7 @@
                         <li class="hide-xs">
                             <a href="#">
                                 <img class="nav-icon" src="img/search.svg" alt="cerca">
-                                <span class="vert-al">Cerca</span>
+                                <span class="vert-al hover-white">Cerca</span>
                             </a>
                         </li>
                         <li class="show-xs">
@@ -58,7 +58,7 @@
                         <li class="hide-xs">
                             <a href="#">
                                 <img class="nav-icon" src="img/libreria.svg" alt="libreria">
-                                <span class="vert-al">La tua libreria</span>
+                                <span class="vert-al hover-white">La tua libreria</span>
                             </a>
                         </li>              
                     </ul>
@@ -71,29 +71,29 @@
                         <div class="create-square">
                             <span>+</span>
                         </div>
-                        <a href="#">Crea Playlist</a>
+                        <a class="hover-white" href="#">Crea Playlist</a>
                     </div>
                     <ul class="playlist">
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                         <li>
-                            <a href="#">Nome playlist</a>
+                            <a class="hover-white" href="#">Nome playlist</a>
                         </li>
                     </ul>
                 </nav>
@@ -110,7 +110,7 @@
                     <li class="hide-xs">
                         <a href="#">
                             <img class="nav-icon download" src="img/download.svg" alt="download">
-                            <span class="vert-al">Installa app</span>
+                            <span class="vert-al hover-white">Installa app</span>
                         </a>
                     </li>
                     <li class="show-xs no-b-marg">
@@ -131,30 +131,32 @@
         <main>
             <!-- parte upgrade -->
             <div class="upgrade">
-                <a href="#" class="upgrade-btn">EFFETTUA L'UPGRADE</a>
+                <div class="hover-scale">
+                    <a href="#" class="upgrade-btn">EFFETTUA L'UPGRADE</a>
+                </div>
             </div>
             <div class="padd-20">
             <!-- /parte upgrade -->
                 <!-- navigazione superiore -->
                 <nav class="main-nav">
                     <ul>
-                        <li>
-                            <a href="#">IN EVIDENZA</a>
+                        <li class="pseudo-green">
+                            <a class="hover-white" href="#">IN EVIDENZA</a>
                         </li>
                         <li>
-                            <a href="#">PODCAST</a>
+                            <a class="hover-white" href="#">PODCAST</a>
                         </li>
                         <li>
-                            <a href="#">CLASSIFICHE</a>
+                            <a class="hover-white" href="#">CLASSIFICHE</a>
                         </li>
                         <li>
-                            <a href="#">GENERI E MOOD</a>
+                            <a class="hover-white" href="#">GENERI E MOOD</a>
                         </li>
                         <li>
-                            <a href="#">NUOVE USCITE</a>
+                            <a class="hover-white" href="#">NUOVE USCITE</a>
                         </li>
                         <li>
-                            <a href="#">SCOPRI</a>
+                            <a class="hover-white" href="#">SCOPRI</a>
                         </li>
                     </ul>
                 </nav>
@@ -168,66 +170,108 @@
                         <!-- primo album -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Heavy Metal</h4>
-                                <h5>Subtitle</h5>
+                                <div class="title">
+                                    <a href="#">Heavy Metal</a>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="#">Subtitle</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /primo album -->
                         <!-- secondo album -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/stranger.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Stranger Things Vol.3 (a Netflix Original Series Soundrack)</h4>
-                                <h5>Kyle Dixon & Michael Stein</h5>
+                                <div class="title">
+                                    <a href="#">Stranger Things Vol.3 (a Netflix Original Series Soundrack)</a>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="#">Kyle Dixon & Michael Stein</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /secondo album -->
                         <!-- terzo album -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/aquietplace.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>A Quiet Place</h4>
-                                <h5>Subtitle</h5>
+                                <div class="title">
+                                    <a href="#">A Quiet Place</a>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="#">Subtitle</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /terzo album -->
                         <!-- quarto album -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/split.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Split</h4>
-                                <h5>Subtitle</h5>
+                                <div class="title">
+                                    <a href="#">Split</a>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="#">Subtitle</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /quarto album -->
                         <!-- quinto album -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/cure.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>A Cure for Welness</h4>
-                                <h5>Subtitle</h5>
+                                <div class="title">
+                                    <a href="#">A Cure for Welness</a> 
+                                </div>
+                                <div class="subtitle">
+                                    <a href="#">Subtitle</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /quinto album -->
                         <!-- sesto album -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/sinister.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Sinister</h4>
-                                <h5>Subtitle</h5>
+                                <div class="title">
+                                    <a href="#">Sinister</a>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="#">Subtitle</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /sesto album -->
@@ -244,20 +288,30 @@
                         <!-- prima playlist -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/radar.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Release Radar</h4>
+                                <div class="title">
+                                    <a href="#">Release Radar</a> 
+                                </div>
                             </div>
                         </div>
                         <!-- /prima playlist -->
                         <!-- seconda playlist -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img src="img/mixdaily.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Daily Mix 1</h4>
+                                <div class="title">
+                                    <a href="#">Daily Mix 1</a> 
+                                </div>
                             </div>
                         </div>
                         <!-- /seconda playlist -->
@@ -274,20 +328,30 @@
                         <!-- primo artista -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img class="circle-img" src="img/youg.jpeg" alt="">
+                                    <div class="overlay overlay-circle">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Lana Del Rey</h4>
+                                <div class="title">
+                                    <a href="#">Lana Del Rey</a> 
+                                </div>
                             </div>
                         </div>
                         <!-- /primo artista -->
                         <!-- secondo artista -->
                         <div class="col">
                             <div class="album">
-                                <div class="album-img">  
+                                <div class="album-img hover-overlay">  
                                     <img class="circle-img" src="img/einaudi.jpeg" alt="">
+                                    <div class="overlay overlay-circle">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
-                                <h4>Ludovico Einaudi</h4>
+                                <div class="title">
+                                    <a href="#">Ludovico Einaudi</a>
+                                </div>
                             </div>
                         </div>
                         <!-- /secondo artista -->
@@ -307,16 +371,16 @@
                         <a class="album-name" href="#">Sinister</a>
                     </li>
                     <li>
-                        <a href="#">Brano</a>
+                        <a class="hover-white hover-underline" href="#">Brano</a>
                     </li>
                     <li>
-                        <a href="#">Nome</a>
+                        <a class="hover-white hover-underline" href="#">Artista</a>
                     </li>
                 </ul>
             </div>
             <div class="heart-folder">
-                <button class="btn"><i class="fa-regular fa-heart"></i></button>
-                <button class="btn"><i class="fa-regular fa-folder"></i></button>
+                <button class="btn hover-white"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn hover-white"><i class="fa-regular fa-folder"></i></button>
             </div>
         </div>
         <!-- /prima colonna footer -->
@@ -325,14 +389,16 @@
             <div class="player-up">
                 <button class="btn"><i class="fa-solid fa-shuffle"></i></button>
                 <button class="btn"><i class="fa-solid fa-backward-step"></i></button>
-                <button class="play btn"><i class="fa-regular fa-circle-play"></i></button>
+                <button class="play btn hover-scale"><i class="fa-regular fa-circle-play"></i></button>
                 <button class="btn"><i class="fa-solid fa-forward-step"></i></button>
                 <button class="btn"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
             </div>
             <div class="player-down">
                 <div class="time">1:52</div>
-                <div class="time-bar bar">
-                    <div class="time-past left-bar"></div>
+                <div class="time-bar bar hover-bar">
+                    <div class="time-past left-bar">
+                        <div class="bar-circle"></div>
+                    </div>
                     <div class="time-left right-bar"></div>
                 </div>
                 <div class="time">4:35</div>
@@ -344,8 +410,10 @@
            <button class="btn"><i class="fa-solid fa-bars"></i></button>
            <button class="btn"><i class="fa-solid fa-desktop"></i></i></button>
            <button class="btn"><i class="fa-solid fa-volume-high"></i></button>
-           <div class="volume-bar bar">
-                <div class="actual-volume left-bar"></div>
+           <div class="volume-bar bar hover-bar">
+                <div class="actual-volume left-bar">
+                    <div class="bar-circle"></div>
+                </div>
                 <div class="total-volume right-bar"></div>
            </div>
         </div>

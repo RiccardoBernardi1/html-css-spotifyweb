@@ -5,6 +5,28 @@
 .padd-20{
     padding: 0 1.25rem ;
 }
+/* HOVER */
+.hover-white:hover{
+    color: white;
+}
+.hover-scale:hover{
+    scale: 1.1;
+}
+.hover-scale{
+    transition: scale 0.2s;
+}
+.hover-overlay:hover .overlay{
+    display: flex;
+}
+.hover-underline:hover{
+    text-decoration: underline;
+}
+.hover-bar:hover .left-bar{
+    background-color: lightgreen;
+}
+.hover-bar:hover .bar-circle{
+    display: block;
+}
 /* TYPOGRAPHY */
 body{
     font-weight: bold;

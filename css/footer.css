@@ -99,6 +99,7 @@ footer{
 }
 .volume-bar{
     width: 60%;
+    min-width: 5.3125rem;
 }
 .actual-volume{
     width: 30%;  
@@ -115,14 +116,35 @@ footer{
     height: .3125rem;
     background-color: white;
     border-radius: .3125rem;
+    position: relative;
 }
 .right-bar{  
-    height: .3125rem;
+    height: .375rem;
     background-color: #5a5a5a;
     border-bottom-right-radius: .3125rem;
     border-top-right-radius: .3125rem;
 }
+.bar-circle{
+    height: .625rem;
+    width: .625rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid;
+    position: absolute;
+    top: -0.125rem;
+    right: 0;
+    display: none;
+}
 .volume>*{
-    padding: 0 .25rem;
+    padding: 0 .3125rem;
+}
+/* RESPONSIVE */
+@media screen and (min-width:700px) {
+    .heart-folder{
+        flex-direction: row;
+    }
+    .heart-folder>*{
+        padding: 0 .4375rem;
+    }
 }
 

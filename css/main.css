@@ -21,7 +21,7 @@ main{
     z-index: 100;
     text-align: right;
     line-height: 5.625rem;
-    padding-right: .3125rem;
+    padding-right: 2.5rem;
 }
 .upgrade-btn{
     text-decoration: none;
@@ -29,6 +29,9 @@ main{
     padding: .9375rem 2.5rem;
     border: .125rem solid white;
     border-radius: 1.875rem;
+}
+.upgrade .hover-scale:active{
+    scale: 1;
 }
 /* navigazione superiore */
 .main-nav ul{
@@ -44,6 +47,15 @@ main{
 .main-nav ul li a{
     text-decoration: none;
     color: inherit;
+}
+.pseudo-green::after{
+    content: '';
+    width: 30%;
+    height: .25rem;
+    background-color: lightgreen;
+    display: block;
+    margin: auto;
+    margin-top: .3125rem;
 }
 /* sezioni */
 section{
@@ -64,6 +76,8 @@ section{
 }
 .album-img{
     margin-bottom: 1.25rem;
+    cursor: pointer;
+    position: relative;
 }
 .album-img img{
     width: 100%;
@@ -71,12 +85,35 @@ section{
 .section-title{
     margin-bottom: 1.875rem;
 }
-.album h4{
+.title a{
+    text-decoration: none;
+    color: inherit;
+}
+.subtitle a{
+    text-decoration: none;
+    color: grey;
+}
+.title{
     margin-bottom: .625rem;
 }
-.album h5{
-    color: grey;
+.subtitle{
     margin-bottom: .3125rem;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 5rem;
+    display: none;
+}
+.overlay-circle{
+    border-radius: 50%;
+}
+.overlay i{
+    margin: auto;
 }
 /* sezione CREATO PER  */
 .section-title h3{

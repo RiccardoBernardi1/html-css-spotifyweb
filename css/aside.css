@@ -12,6 +12,14 @@ aside{
     overflow-y: hidden;
 }
 /* navigazioni laterali */
+.logo-icon{
+    max-width: 10rem;
+}
+.home{
+    border-left: .1875rem solid lightgreen;
+    padding-left: .9375rem;
+    margin-left: -1.25rem;
+}
 aside nav{
     max-width: 100%;
 }
@@ -62,7 +70,6 @@ nav h3{
 }
 .playlist-header{
     display: flex; 
-    font-size: 1.25rem;  
     align-items: center;
     margin: .9375rem 0 1.25rem;
 }
