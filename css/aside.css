@@ -2,7 +2,6 @@
 aside{
     width: 3.125rem;
     background-color: black;
-    height: 100%;
     flex-shrink: 0;
     padding: .3125rem .9375rem ;
     display: flex;
@@ -10,28 +9,11 @@ aside{
     color: #707070;
     font-weight:bold;
     overflow-y: hidden;
+    height: 100%;
 }
 /* navigazioni laterali */
-.logo-icon{
-    max-width: 10rem;
-}
-.home{
-    border-left: .1875rem solid lightgreen;
-    padding-left: .9375rem;
-    margin-left: -1.25rem;
-}
-aside nav{
-    max-width: 100%;
-}
-aside nav ul{
-    list-style: none;
-}
-aside nav ul li:not(.no-b-marg){
+aside ul li:not(.no-b-marg){
     margin-bottom: .9375rem;
-}
-aside nav ul li a{
-    text-decoration: none;
-    color: inherit;
 }
 nav.hide-xs{
     margin-top: 1.5625rem;
@@ -44,10 +26,25 @@ nav.hide-xs li{
     filter: invert(0.3);
     vertical-align: middle;
 }
+.vert-al{
+    vertical-align: middle;
+}
+/* prima navigazione laterale */
+.logo-icon{
+    max-width: 10rem;
+}
+.home{
+    border-left: .1875rem solid lightgreen;
+    padding-left: .9375rem;
+    margin-left: -1.25rem;
+}
+/* seconda navigazione laterale */
 .nav-icon.profile{
     width: 1.5625rem;
     background-color: #808080;
     border-radius: 50%;
+    margin-right: .625rem;
+    filter: invert(0);
 }
 .hide-xs.no-b-marg{
     border-top: 2px solid #808080;
@@ -58,24 +55,22 @@ nav.hide-xs li{
     width: 100%;
     margin-top: auto;
 }
-.vert-al{
-    vertical-align: middle;
-}
 .download{
-    margin-left: -0.1875rem;
+    margin-left: -0.125rem;
+    margin-right: .625rem;
+}
+/* hover icone */
+.nav-icon:hover{
+    filter: invert(0);
 }
 /* crea playlist */
-nav h3{
+.hide-xs h3{
     color: white;
 }
 .playlist-header{
     display: flex; 
     align-items: center;
     margin: .9375rem 0 1.25rem;
-}
-.playlist-header a{
-    text-decoration: none;
-    color: inherit;
 }
 .create-square{
     width: 2.1875rem;
@@ -86,10 +81,18 @@ nav h3{
     color: black;
     line-height: 2.1875rem;
     text-align: center;
+    cursor: pointer;
 }
 .playlist{
     overflow-y: auto;
-    height: 15rem;
+    height: 100%;
+    padding-bottom: 5.375rem;
+}
+.hide-flex{
+    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
 }
 /* RESPONSIVE */
 @media screen and (min-width:600px) {
@@ -99,6 +102,9 @@ nav h3{
     }
     .hide-xs{
         display: block;
+    }
+    .hide-flex{
+        display: flex;
     }
     .show-xs{
         display: none;

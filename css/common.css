@@ -5,6 +5,20 @@
 .padd-20{
     padding: 0 1.25rem ;
 }
+.no-ls-sty{
+    list-style: none;
+}
+.no-txt-dc{
+    text-decoration: none;
+}
+.clr-inh{
+    color: inherit;
+}
+/* TYPOGRAPHY */
+body{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
 /* HOVER */
 .hover-white:hover{
     color: white;
@@ -26,9 +40,4 @@
 }
 .hover-bar:hover .bar-circle{
     display: block;
-}
-/* TYPOGRAPHY */
-body{
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
 }

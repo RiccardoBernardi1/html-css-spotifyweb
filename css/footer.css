@@ -29,17 +29,15 @@ footer{
     min-width: 6.5625rem;
 }
 .footer-col ul{
-    list-style: none;
     margin-left: .5rem;
 }
 .footer-col a{
-    text-decoration: none;
     color: grey;
     font-size: .75rem;
 }
 .footer-col .album-name{
-    color:white;
     font-size: .875rem;
+    color: white;
 }
 .footer-img{
     max-width: 2.5rem;
@@ -58,16 +56,12 @@ footer{
 /* seconda colonna footer */
 .player{
     width: 70%;
-    padding-bottom: 1.5625rem;
+    margin-bottom: 1.5625rem;
 }
 .player-up,.player-down{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.player-down{
-    min-width: 12.5rem;
-    font-size: .875rem;
 }
 .player-up .btn{
     padding: .625rem;
@@ -77,6 +71,11 @@ footer{
     padding-right: 1.25rem;
     font-size: 2rem;
 }
+/* parte inferiore player */
+.player-down{
+    font-size: .875rem;
+}
+/* barra minutaggio */
 .time-bar{
     width: 40%;
     padding: 0 .625rem;
@@ -84,19 +83,17 @@ footer{
 .time-past{
     width: 35%;
 }
-.time-left{
-    flex-grow: 1;
-}
 /* terza colonna footer */
 .volume {
     display: flex;
     justify-content: space-around;
     min-width: 10rem;
-}
-.volume{
     width: 15%;
-    padding-right: ;
 }
+.volume>*{
+    padding: 0 .3125rem;
+}
+/* barra volume */
 .volume-bar{
     width: 60%;
     min-width: 5.3125rem;
@@ -104,16 +101,14 @@ footer{
 .actual-volume{
     width: 30%;  
 }
-.total-volume{
-    flex-grow: 1;
-}
+/* barra base */
 .bar{
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 .left-bar{
-    height: .3125rem;
+    height: .375rem;
     background-color: white;
     border-radius: .3125rem;
     position: relative;
@@ -123,6 +118,7 @@ footer{
     background-color: #5a5a5a;
     border-bottom-right-radius: .3125rem;
     border-top-right-radius: .3125rem;
+    flex-grow: 1;
 }
 .bar-circle{
     height: .625rem;
@@ -134,9 +130,6 @@ footer{
     top: -0.125rem;
     right: 0;
     display: none;
-}
-.volume>*{
-    padding: 0 .3125rem;
 }
 /* RESPONSIVE */
 @media screen and (min-width:700px) {

@@ -19,17 +19,19 @@ main{
     right: 0;
     width: 100%;
     z-index: 100;
-    text-align: right;
+    display:flex;
     line-height: 5.625rem;
-    padding-right: 2.5rem;
+    padding-right: 1.25rem;
+    justify-content: flex-end;
 }
+/* bottone upgrade */
 .upgrade-btn{
-    text-decoration: none;
     color: white;
     padding: .9375rem 2.5rem;
     border: .125rem solid white;
     border-radius: 1.875rem;
 }
+/* upgrade hover */
 .upgrade .hover-scale:active{
     scale: 1;
 }
@@ -37,17 +39,13 @@ main{
 .main-nav ul{
     color: grey;
     display: flex;
-    list-style: none;
     flex-wrap: wrap;
     justify-content:center ;
 }
 .main-nav ul li{
     padding: 1.25rem .625rem;
 }
-.main-nav ul li a{
-    text-decoration: none;
-    color: inherit;
-}
+/* pseudo elemento decorazione  */
 .pseudo-green::after{
     content: '';
     width: 30%;
@@ -67,6 +65,7 @@ section{
     margin-left: -0.25rem;
     margin-right: -0.25rem;
 }
+/* albums  */
 .col{
     width: 50%; 
 }
@@ -85,12 +84,7 @@ section{
 .section-title{
     margin-bottom: 1.875rem;
 }
-.title a{
-    text-decoration: none;
-    color: inherit;
-}
 .subtitle a{
-    text-decoration: none;
     color: grey;
 }
 .title{
@@ -99,6 +93,7 @@ section{
 .subtitle{
     margin-bottom: .3125rem;
 }
+/* overlay albums */
 .overlay{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -109,11 +104,12 @@ section{
     font-size: 5rem;
     display: none;
 }
-.overlay-circle{
-    border-radius: 50%;
-}
 .overlay i{
     margin: auto;
+}
+/* active immagine album */
+.album-img:active{
+    scale: 0.9;
 }
 /* sezione CREATO PER  */
 .section-title h3{
@@ -123,6 +119,9 @@ section{
 }
 /* sezione ARTISTI PIù ASCOLTATI */
 .circle-img{
+    border-radius: 50%;
+}
+.overlay-circle{
     border-radius: 50%;
 }
 /* RESPONSIVE */
