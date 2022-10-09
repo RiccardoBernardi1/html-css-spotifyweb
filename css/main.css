@@ -135,3 +135,8 @@ section{
         width: calc(100% / 6)
     }
 }
+@media screen and (max-width:540px) {
+    .container-main-aside{
+        height: calc(100% - 9.375rem);
+    }
+   }
